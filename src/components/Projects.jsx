@@ -45,7 +45,7 @@ const StyledCard = styled.div`
 
 const Projects = () => {
   return (
-    <div  id="projects" className="text-center py-20 bg-gray-900">
+    <div  id="projects" className="text-center py-20 bg-gray-800">
       <h2 className="text-4xl font-bold text-white mb-6">My Projects</h2>
 
       {/* Projects Grid */}
