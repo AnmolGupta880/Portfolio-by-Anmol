@@ -13,6 +13,11 @@ const projects = [
     description: "Women safety app with SOS alerts, location tracking, and IoT integration.",
     tech: "Java, XML, IoT (ESP8266)",
   },
+  {
+    titel:"Marketpulse",
+    description: "Developed a real-time stock insights platform integrating live stock updates, market trends, and financial news using APIs",
+       tech: "React, Tailwind CSS, Axios, APIs (Alpha Vantage/Finnhub/Twelve Data)"
+  },
 ];
 
 // Box-Shadow Animation
