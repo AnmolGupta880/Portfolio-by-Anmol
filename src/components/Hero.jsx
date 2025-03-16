@@ -20,7 +20,7 @@ const Hero = () => {
         <h1 className="text-3xl md:text-4xl font-bold">About</h1>
         <p className="text-lg text-gray-400 mt-3 leading-relaxed">
           4th-year IT student & Full Stack Developer skilled in React, HTML, Tailwind CSS, Python, and Node.js.  
-          I’ve built projects like <span className="text-blue-400 font-semibold">ReFokus.com</span> and <span className="text-blue-400 font-semibold">Sheild</span> (IoT-integrated safety app).  
+          I’ve built projects like <span className="text-blue-400 font-semibold">MarketPulse</span> and <span className="text-blue-400 font-semibold">Sheild</span> (IoT-integrated safety app).  
           As a Placement Assistance Cell coordinator, I support career initiatives.  
           <span className="block mt-2 text-white font-medium">
             Achievements: Top 10 in Avishkar, 2nd in Technical Poster Making, impactful college projects.
