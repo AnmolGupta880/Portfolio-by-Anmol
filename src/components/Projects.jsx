@@ -14,7 +14,7 @@ const projects = [
     tech: "Java, XML, IoT (ESP8266)",
   },
   {
-    titel:"MarketPulse",
+    title:"MarketPulse",
     description: "Developed a real-time stock insights platform integrating live stock updates, market trends, and financial news using APIs",
        tech: "React, Tailwind CSS, Axios, APIs (Alpha Vantage/Finnhub/Twelve Data)"
   },
