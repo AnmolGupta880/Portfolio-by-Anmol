@@ -13,7 +13,7 @@ const projects = [
     title: "Shield",
     description: "Women safety app with SOS alerts, location tracking, and IoT integration.",
     tech: "Java, XML, IoT (ESP8266)",
-    deploy: "https://shield-women-safety-app.vercel.app",
+    deploy: "",
   },
   {
     title: "MarketPulse",
@@ -30,16 +30,16 @@ const shadowAnimation = keyframes`
   100% { box-shadow: 0px 0px 5px rgba(56, 189, 248, 0.2); }
 `;
 
-// Make the link block-level
+// Styled link wrapper (same size, no layout disruption)
 const StyledLink = styled.a`
-  display: block;
   text-decoration: none;
   color: inherit;
+  width: 320px;
 `;
 
-// Styled Card
+// Styled card (same size as before)
 const StyledCard = styled.div`
-  width: 320px;
+  width: 100%;
   padding: 20px;
   background: #1e293b;
   color: white;
@@ -51,7 +51,6 @@ const StyledCard = styled.div`
   align-items: center;
   gap: 10px;
   position: relative;
-  z-index: 0;
   animation: ${shadowAnimation} 5s infinite ease-in-out;
   cursor: pointer;
 
@@ -82,7 +81,7 @@ const Projects = () => {
             rel="noopener noreferrer"
           >
             <StyledCard>
-              {/* Ping Effect */}
+              {/* Ping animation */}
               <div className="ping">
                 <span className="relative flex h-3 w-3">
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
@@ -90,7 +89,7 @@ const Projects = () => {
                 </span>
               </div>
 
-              {/* Project Info */}
+              {/* Project content */}
               <h3 className="text-xl font-semibold text-blue-400">{project.title}</h3>
               <p className="text-gray-300 mt-2">{project.description}</p>
               <p className="text-gray-400 mt-2 text-sm">Tech: {project.tech}</p>
