@@ -17,7 +17,7 @@ const projects = [
     title:"MarketPulse",
     description: "Developed a real-time stock insights platform integrating live stock updates, market trends, and financial news using APIs",
        tech: "React, Tailwind CSS, Axios, APIs (Alpha Vantage/Finnhub/Twelve Data)"
-  },
+    deploy: "https://refokus-clone.vercel.app",  },
 ];
 
 // Box-Shadow Animation
