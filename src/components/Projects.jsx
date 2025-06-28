@@ -23,19 +23,21 @@ const projects = [
   },
 ];
 
-// Box-Shadow Animation
+// Animation
 const shadowAnimation = keyframes`
   0% { box-shadow: 0px 0px 5px rgba(56, 189, 248, 0.2); }
   50% { box-shadow: 10px 20px 30px rgba(56, 189, 248, 0.6); }
   100% { box-shadow: 0px 0px 5px rgba(56, 189, 248, 0.2); }
 `;
 
-// Styled Link Wrapper
+// Make the link block-level
 const StyledLink = styled.a`
+  display: block;
   text-decoration: none;
+  color: inherit;
 `;
 
-// Styled Project Card
+// Styled Card
 const StyledCard = styled.div`
   width: 320px;
   padding: 20px;
@@ -49,11 +51,19 @@ const StyledCard = styled.div`
   align-items: center;
   gap: 10px;
   position: relative;
+  z-index: 0;
   animation: ${shadowAnimation} 5s infinite ease-in-out;
   cursor: pointer;
 
   &:hover {
     transform: scale(1.05);
+  }
+
+  .ping {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 1;
   }
 `;
 
@@ -72,21 +82,17 @@ const Projects = () => {
             rel="noopener noreferrer"
           >
             <StyledCard>
-              {/* Animated Ping Effect */}
-              <div className="absolute top-4 right-4">
+              {/* Ping Effect */}
+              <div className="ping">
                 <span className="relative flex h-3 w-3">
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
                   <span className="relative inline-flex h-3 w-3 rounded-full bg-sky-500"></span>
                 </span>
               </div>
 
-              {/* Project Title */}
+              {/* Project Info */}
               <h3 className="text-xl font-semibold text-blue-400">{project.title}</h3>
-
-              {/* Project Description */}
               <p className="text-gray-300 mt-2">{project.description}</p>
-
-              {/* Technologies Used */}
               <p className="text-gray-400 mt-2 text-sm">Tech: {project.tech}</p>
             </StyledCard>
           </StyledLink>
