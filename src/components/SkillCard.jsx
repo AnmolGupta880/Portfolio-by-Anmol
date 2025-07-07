@@ -5,10 +5,12 @@ import styled, { keyframes } from "styled-components";
 const skills = [
   { name: "HTML", level: "Intermediate", color: "#000000" }, // HTML Orange
   { name: "Tailwind CSS", level: "Intermediate", color: "#000000" }, // Tailwind Blue
-  { name: "React.js", level: "Intermediate", color: "	#000000" }, // React Light Blue
+  { name: "React.js", level: "Intermediate", color: "	#000000" },
+   { name: "Express", level: "Intermediate", color: "#000000" },// React Light Blue
   { name: "Python", level: "Intermediate", color: "#000000" }, // Python Blue
   { name: "Java", level: "Basic", color: "#000000" }, // Java Orange
-  { name: "SQL", level: "Basic", color: "#000000" }, // SQL Blue
+  { name: "SQL", level: "Basic", color: "#000000" }, 
+   { name: "Wordpress", level: "Basic", color: "#000000" },// SQL Blue
 ];
 
 const SkillCard = ({ name, level, color }) => {
