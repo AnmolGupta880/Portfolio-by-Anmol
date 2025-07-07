@@ -84,6 +84,48 @@ const Projects = () => {
               href={project.deploy}
               target="_blank"
               rel="noopener noreferrer"
+              import React from "react";
+
+const Projects = () => {
+  return (
+    <div className="p-6 bg-gray-100 min-h-screen">
+      {/* Project 1: Example Project with Live Demo */}
+      <div className="bg-white p-4 rounded-lg shadow mb-6">
+        <h2 className="text-xl font-semibold mb-2">AeroGuide</h2>
+        <p className="mb-4">
+          A comprehensive guide platform for aspiring pilots. Includes DGCA exam
+          roadmap, cadet and CPL program breakdown, flying schools, and training flow.
+        </p>
+
+        {/* ✅ Live Demo Button (as requested) */}
+        <a
+          href="https://your-project-demo-link.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button
+            type="button"
+            class="text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900"
+          >
+            Live Demo
+          </button>
+        </a>
+      </div>
+
+      {/* Project 2: Shield (unchanged, no button added here) */}
+      <div className="bg-white p-4 rounded-lg shadow mb-6">
+        <h2 className="text-xl font-semibold mb-2">Shield (Women Safety App)</h2>
+        <p>
+          An Android app built with Java and IoT integration. Features include SOS alerts,
+          location tracking, mental health assistance, and Firebase real-time data.
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default Projects;
+
             >
               <StyledCard>
                 <div className="ping">
